@@ -1,0 +1,2869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.5.1" type="baseline" client="gradle" dependencies="false" name="AGP (8.5.1)" variant="all" version="8.5.1">
+
+    <issue
+        id="SuspiciousImport"
+        message="Don&apos;t include `android.R` here; use a fully qualified name for each usage instead"
+        errorLine1="import android.R"
+        errorLine2="~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/OrderPlaceActivity.kt"
+            line="3"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="NestedScrolling"
+        message="The vertically scrolling `ScrollView` should not contain another vertically scrolling widget (`ScrollView`)"
+        errorLine1="            &lt;ScrollView"
+        errorLine2="             ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="39"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="FragmentTagUsage"
+        message="Replace the &lt;fragment> tag with FragmentContainerView."
+        errorLine1="    &lt;fragment"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_auth.xml"
+            line="10"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="VectorRaster"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+        errorLine1="    android:width=&quot;800dp&quot;"
+        errorLine2="                   ~~~~~">
+        <location
+            file="src/main/res/drawable/ic_delete.xml"
+            line="2"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="VectorRaster"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+        errorLine1="    android:width=&quot;800dp&quot;"
+        errorLine2="                   ~~~~~">
+        <location
+            file="src/main/res/drawable/ic_drawer.xml"
+            line="2"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="VectorRaster"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+        errorLine1="    android:width=&quot;800dp&quot;"
+        errorLine2="                   ~~~~~">
+        <location
+            file="src/main/res/drawable/ic_profile.xml"
+            line="2"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="VectorRaster"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+        errorLine1="    android:width=&quot;800dp&quot;"
+        errorLine2="                   ~~~~~">
+        <location
+            file="src/main/res/drawable/status_delivered.xml"
+            line="2"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="VectorRaster"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+        errorLine1="    android:width=&quot;800dp&quot;"
+        errorLine2="                   ~~~~~">
+        <location
+            file="src/main/res/drawable/status_dispatched.xml"
+            line="2"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="VectorRaster"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+        errorLine1="    android:width=&quot;800dp&quot;"
+        errorLine2="                   ~~~~~">
+        <location
+            file="src/main/res/drawable/status_ordered.xml"
+            line="2"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="VectorRaster"
+        message="Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more"
+        errorLine1="    android:width=&quot;800dp&quot;"
+        errorLine2="                   ~~~~~">
+        <location
+            file="src/main/res/drawable/status_received.xml"
+            line="2"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.5.1 is available: 8.6.0. (There is also a newer version of 8.5.𝑥 available, if upgrading to 8.6.0 is difficult: 8.5.2)"
+        errorLine1="agp = &quot;8.5.1&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.5.1 is available: 8.6.0. (There is also a newer version of 8.5.𝑥 available, if upgrading to 8.6.0 is difficult: 8.5.2)"
+        errorLine1="agp = &quot;8.5.1&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.5.1 is available: 8.6.0. (There is also a newer version of 8.5.𝑥 available, if upgrading to 8.6.0 is difficult: 8.5.2)"
+        errorLine1="agp = &quot;8.5.1&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.hbb20:ccp than 2.6.0 is available: 2.7.1"
+        errorLine1="ccpVersion = &quot;2.6.0&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="5"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.hbb20:ccp than 2.6.0 is available: 2.7.1"
+        errorLine1="ccpVersion = &quot;2.6.0&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="5"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.hbb20:ccp than 2.6.0 is available: 2.7.1"
+        errorLine1="ccpVersion = &quot;2.6.0&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="5"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-bom than 33.1.2 is available: 33.2.0"
+        errorLine1="firebaseBom = &quot;33.1.2&quot;"
+        errorLine2="              ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-bom than 33.1.2 is available: 33.2.0"
+        errorLine1="firebaseBom = &quot;33.1.2&quot;"
+        errorLine2="              ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-bom than 33.1.2 is available: 33.2.0"
+        errorLine1="firebaseBom = &quot;33.1.2&quot;"
+        errorLine2="              ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-messaging-ktx than 24.0.0 is available: 24.0.1"
+        errorLine1="firebaseMessagingKtx = &quot;24.0.0&quot;"
+        errorLine2="                       ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="11"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-messaging-ktx than 24.0.0 is available: 24.0.1"
+        errorLine1="firebaseMessagingKtx = &quot;24.0.0&quot;"
+        errorLine2="                       ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="11"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-messaging-ktx than 24.0.0 is available: 24.0.1"
+        errorLine1="firebaseMessagingKtx = &quot;24.0.0&quot;"
+        errorLine2="                       ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="11"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of phonepe.intentsdk.android.release:IntentSDK than 2.3.0 is available: 2.4.3"
+        errorLine1="intentsdk = &quot;2.3.0&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of phonepe.intentsdk.android.release:IntentSDK than 2.3.0 is available: 2.4.3"
+        errorLine1="intentsdk = &quot;2.3.0&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of phonepe.intentsdk.android.release:IntentSDK than 2.3.0 is available: 2.4.3"
+        errorLine1="intentsdk = &quot;2.3.0&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-common-java8 than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycleExtensions = &quot;2.8.3&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="22"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-common-java8 than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycleExtensions = &quot;2.8.3&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="22"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-common-java8 than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycleExtensions = &quot;2.8.3&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="22"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycleExtensions = &quot;2.8.3&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="22"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycleExtensions = &quot;2.8.3&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="22"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycleExtensions = &quot;2.8.3&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="22"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.0 is available: 1.9.1"
+        errorLine1="activity = &quot;1.9.0&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.0 is available: 1.9.1"
+        errorLine1="activity = &quot;1.9.0&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.0 is available: 1.9.1"
+        errorLine1="activity = &quot;1.9.0&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-compiler than 2.3.0 is available: 2.6.1"
+        errorLine1="roomCompiler = &quot;2.3.0&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="33"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-compiler than 2.3.0 is available: 2.6.1"
+        errorLine1="roomCompiler = &quot;2.3.0&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="33"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-compiler than 2.3.0 is available: 2.6.1"
+        errorLine1="roomCompiler = &quot;2.3.0&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="33"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-runtime than 2.3.0 is available: 2.6.1"
+        errorLine1="roomRuntimeVersion = &quot;2.3.0&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="35"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-runtime than 2.3.0 is available: 2.6.1"
+        errorLine1="roomRuntimeVersion = &quot;2.3.0&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="35"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-runtime than 2.3.0 is available: 2.6.1"
+        errorLine1="roomRuntimeVersion = &quot;2.3.0&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="35"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-firestore than 25.0.0 is available: 25.1.0"
+        errorLine1="firebaseFirestore = &quot;25.0.0&quot;"
+        errorLine2="                    ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="43"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-firestore than 25.0.0 is available: 25.1.0"
+        errorLine1="firebaseFirestore = &quot;25.0.0&quot;"
+        errorLine2="                    ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="43"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-firestore than 25.0.0 is available: 25.1.0"
+        errorLine1="firebaseFirestore = &quot;25.0.0&quot;"
+        errorLine2="                    ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="43"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-compiler but with different version"
+        errorLine1="androidx-room-compiler = { module = &quot;androidx.room:room-compiler&quot;, version.ref = &quot;roomRuntime&quot; }"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="53"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-compiler but with different version"
+        errorLine1="androidx-room-compiler = { module = &quot;androidx.room:room-compiler&quot;, version.ref = &quot;roomRuntime&quot; }"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="53"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-compiler but with different version"
+        errorLine1="androidx-room-compiler = { module = &quot;androidx.room:room-compiler&quot;, version.ref = &quot;roomRuntime&quot; }"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="53"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-compiler but with different version"
+        errorLine1="androidx-room-compiler-v230 = { module = &quot;androidx.room:room-compiler&quot;, version.ref = &quot;roomCompiler&quot; }"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="54"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-compiler but with different version"
+        errorLine1="androidx-room-compiler-v230 = { module = &quot;androidx.room:room-compiler&quot;, version.ref = &quot;roomCompiler&quot; }"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="54"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-compiler but with different version"
+        errorLine1="androidx-room-compiler-v230 = { module = &quot;androidx.room:room-compiler&quot;, version.ref = &quot;roomCompiler&quot; }"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="54"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-runtime but with different version"
+        errorLine1="androidx-room-runtime = { module = &quot;androidx.room:room-runtime&quot;, version.ref = &quot;roomRuntime&quot; }"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="56"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-runtime but with different version"
+        errorLine1="androidx-room-runtime = { module = &quot;androidx.room:room-runtime&quot;, version.ref = &quot;roomRuntime&quot; }"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="56"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-runtime but with different version"
+        errorLine1="androidx-room-runtime = { module = &quot;androidx.room:room-runtime&quot;, version.ref = &quot;roomRuntime&quot; }"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="56"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-runtime but with different version"
+        errorLine1="androidx-room-runtime-v230 = { module = &quot;androidx.room:room-runtime&quot;, version.ref = &quot;roomRuntimeVersion&quot; }"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="57"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-runtime but with different version"
+        errorLine1="androidx-room-runtime-v230 = { module = &quot;androidx.room:room-runtime&quot;, version.ref = &quot;roomRuntimeVersion&quot; }"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="57"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.room:room-runtime but with different version"
+        errorLine1="androidx-room-runtime-v230 = { module = &quot;androidx.room:room-runtime&quot;, version.ref = &quot;roomRuntimeVersion&quot; }"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="57"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies com.hbb20:ccp but with different version"
+        errorLine1="ccp = { module = &quot;com.hbb20:ccp&quot;, version.ref = &quot;ccp&quot; }"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="59"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies com.hbb20:ccp but with different version"
+        errorLine1="ccp = { module = &quot;com.hbb20:ccp&quot;, version.ref = &quot;ccp&quot; }"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="59"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies com.hbb20:ccp but with different version"
+        errorLine1="ccp = { module = &quot;com.hbb20:ccp&quot;, version.ref = &quot;ccp&quot; }"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="59"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies com.hbb20:ccp but with different version"
+        errorLine1="ccp-v260 = { module = &quot;com.hbb20:ccp&quot;, version.ref = &quot;ccpVersion&quot; }"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="60"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies com.hbb20:ccp but with different version"
+        errorLine1="ccp-v260 = { module = &quot;com.hbb20:ccp&quot;, version.ref = &quot;ccpVersion&quot; }"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="60"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies com.hbb20:ccp but with different version"
+        errorLine1="ccp-v260 = { module = &quot;com.hbb20:ccp&quot;, version.ref = &quot;ccpVersion&quot; }"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="60"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies phonepe.intentsdk.android.release:IntentSDK but with different version"
+        errorLine1="intentsdk = { module = &quot;phonepe.intentsdk.android.release:IntentSDK&quot;, version.ref = &quot;intentsdk&quot; }"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="75"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies phonepe.intentsdk.android.release:IntentSDK but with different version"
+        errorLine1="intentsdk = { module = &quot;phonepe.intentsdk.android.release:IntentSDK&quot;, version.ref = &quot;intentsdk&quot; }"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="75"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies phonepe.intentsdk.android.release:IntentSDK but with different version"
+        errorLine1="intentsdk = { module = &quot;phonepe.intentsdk.android.release:IntentSDK&quot;, version.ref = &quot;intentsdk&quot; }"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="75"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies phonepe.intentsdk.android.release:IntentSDK but with different version"
+        errorLine1="intentsdk-v243 = { module = &quot;phonepe.intentsdk.android.release:IntentSDK&quot;, version.ref = &quot;intentsdkVersion&quot; }"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="76"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies phonepe.intentsdk.android.release:IntentSDK but with different version"
+        errorLine1="intentsdk-v243 = { module = &quot;phonepe.intentsdk.android.release:IntentSDK&quot;, version.ref = &quot;intentsdkVersion&quot; }"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="76"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies phonepe.intentsdk.android.release:IntentSDK but with different version"
+        errorLine1="intentsdk-v243 = { module = &quot;phonepe.intentsdk.android.release:IntentSDK&quot;, version.ref = &quot;intentsdkVersion&quot; }"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="76"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                        android:textSize=&quot;20dp&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="54"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                        android:textSize=&quot;16dp&quot;/>"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="63"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                    android:textSize=&quot;20dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="86"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                    android:textSize=&quot;20dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="109"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                    android:textSize=&quot;20dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="132"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                    android:textSize=&quot;20dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="155"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                    android:textSize=&quot;20dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="178"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="                            android:textSize=&quot;20dp&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="223"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        errorLine1="        android:textSize=&quot;13dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_search.xml"
+            line="50"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableRightCompat` instead of `android:drawableRight`"
+        errorLine1="                android:drawableRight=&quot;@drawable/right_arrow&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="225"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableTint` instead of `android:drawableTint`"
+        errorLine1="                android:drawableTint=&quot;@color/bg_color&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="227"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnsafeImplicitIntentLaunch"
+        message="The intent action `android.intent.action.MAIN (used to start an activity)` matches the intent filter of a non-exported component `com.razorpay.CheckoutActivity` from a manifest. If you are trying to invoke this specific component via the action then you should make the intent explicit by calling `Intent.set{Component,Class,ClassName}`."
+        errorLine1="            val i = Intent(Intent.ACTION_MAIN)"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/MainActivity.kt"
+            line="117"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 26"
+        errorLine1="            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/auth/SplaceScreenFragment.kt"
+            line="42"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="            &lt;LinearLayout"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="69"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="            &lt;LinearLayout"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="92"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="            &lt;LinearLayout"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="115"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="            &lt;LinearLayout"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="138"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="            &lt;LinearLayout"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="161"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="         ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="191"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (2250 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M503.9,315.73H386.3c-15.39,0 -27.9,-12.52 -27.9,-27.9v-40.36c0,-4.71 3.82,-8.53 8.53,-8.53s8.53,3.82 8.53,8.53v40.36c0,5.97 4.86,10.84 10.84,10.84h81.16l-20.75,-83.01c-2.85,-11.41 -13.06,-19.39 -24.84,-19.39h-80.54v-25.6c0,-9.41 -7.65,-17.07 -17.07,-17.07H187.3c0.26,-2.82 0.44,-5.65 0.44,-8.53c0,-51.76 -42.11,-93.87 -93.87,-93.87C42.11,51.2 0,93.31 0,145.07c0,48.88 37.56,89.11 85.33,93.43v60.17v102.4c0,9.41 7.65,17.07 17.07,17.07h34.9c4.09,24.17 25.11,42.67 50.43,42.67c25.32,0 46.35,-18.49 50.43,-42.67h121c4.09,24.17 25.11,42.67 50.43,42.67c25.32,0 46.35,-18.49 50.43,-42.67h34.9c9.41,0 17.07,-7.65 17.07,-17.07v-71.02C512,324.06 508.83,318.81 503.9,315.73zM92.43,192.47c-1.42,2.13 -3.72,3.51 -6.26,3.76c-0.29,0.03 -0.56,0.04 -0.85,0.04c-2.25,0 -4.43,-0.89 -6.03,-2.5l-34.13,-34.13c-3.34,-3.34 -3.34,-8.73 0,-12.07c3.34,-3.34 8.73,-3.34 12.07,0l26.78,26.77l45.42,-68.14c2.62,-3.92 7.9,-4.99 11.84,-2.36c3.92,2.61 4.97,7.91 2.36,11.84L92.43,192.47zM187.73,443.73c-18.83,0 -34.13,-15.31 -34.13,-34.13c0,-18.83 15.31,-34.13 34.13,-34.13s34.13,15.31 34.13,34.13C221.87,428.42 206.56,443.73 187.73,443.73zM324.27,204.8v8.56c0,42.33 -34.44,76.77 -76.77,76.77H102.4v-51.59c0.17,-0.02 0.33,-0.05 0.5,-0.07c0.85,-0.08 1.67,-0.22 2.51,-0.32c1.93,-0.24 3.85,-0.52 5.75,-0.88c1.18,-0.22 2.34,-0.47 3.5,-0.73c1.53,-0.35 3.04,-0.75 4.53,-1.17c1.24,-0.35 2.47,-0.68 3.69,-1.08c1.54,-0.5 3.06,-1.09 4.57,-1.67c2.1,-0.81 4.16,-1.69 6.18,-2.64c1.13,-0.53 2.27,-1.05 3.37,-1.62c1.31,-0.68 2.59,-1.41 3.86,-2.15c1.08,-0.62 2.13,-1.27 3.17,-1.93c1.2,-0.76 2.39,-1.52 3.54,-2.33c1.25,-0.87 2.45,-1.8 3.65,-2.73c1.19,-0.92 2.36,-1.84 3.5,-2.81c1.17,-1 2.31,-2.02 3.43,-3.07h114.92c4.71,0 8.53,-3.82 8.53,-8.53s-3.82,-8.53 -8.53,-8.53H172.51c1.35,-2.06 2.6,-4.18 3.8,-6.36c0.13,-0.24 0.24,-0.49 0.37,-0.73c1.18,-2.2 2.27,-4.47 3.28,-6.78c0.29,-0.67 0.56,-1.36 0.85,-2.05c0.8,-1.96 1.54,-3.97 2.2,-6.01c0.25,-0.74 0.5,-1.49 0.73,-2.24c0.14,-0.48 0.33,-0.95 0.47,-1.43h140.07V204.8zM366.93,349.87c-4.71,0 -8.53,-3.82 -8.53,-8.53s3.82,-8.53 8.53,-8.53H384c4.71,0 8.53,3.82 8.53,8.53s-3.82,8.53 -8.53,8.53H366.93zM409.6,443.73c-18.83,0 -34.13,-15.31 -34.13,-34.13c0,-18.83 15.31,-34.13 34.13,-34.13c18.83,0 34.13,15.31 34.13,34.13C443.73,428.42 428.42,443.73 409.6,443.73z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/status_dispatched.xml"
+            line="16"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="KaptUsageInsteadOfKsp"
+        message="This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp"
+        errorLine1="    kapt(&quot;androidx.room:room-compiler:2.6.1&quot;)"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="88"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="179"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_list_shimmer.xml"
+            line="10"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance"
+        errorLine1="                    android:layout_width=&quot;wrap_content&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="31"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        message="Use a `layout_width` of `0dp` instead of `wrap_content` for better performance"
+        errorLine1="                    android:layout_width=&quot;wrap_content&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_product_details.xml"
+            line="113"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/fade_green` with a theme that also paints a background (inferred theme is `@style/Theme.FreshVeggieMart`)"
+        errorLine1="    android:background=&quot;@color/fade_green&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.FreshVeggieMart`)"
+        errorLine1="    android:background=&quot;@color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/fade_green` with a theme that also paints a background (inferred theme is `@style/Theme.FreshVeggieMart`)"
+        errorLine1="    android:background=&quot;@color/fade_green&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_orders.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.FreshVeggieMart`)"
+        errorLine1="    android:background=&quot;@color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_search.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/fade_green` with a theme that also paints a background (inferred theme is `@style/Theme.FreshVeggieMart`)"
+        errorLine1="    android:background=&quot;@color/fade_green&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_splace_screen.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.FreshVeggieMart`)"
+        errorLine1="    android:background=&quot;@color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/progress_dialog.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.navigation.cart_category_nav_graph` appears to be unused"
+        errorLine1="&lt;navigation xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/navigation/cart_category_nav_graph.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.freshgreen` appears to be unused"
+        errorLine1="    &lt;color name=&quot;freshgreen&quot;>#4CAF50&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="11"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.dialog_button_neutral_background` appears to be unused"
+        errorLine1="&lt;shape"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/dialog_button_neutral_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_cancle` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:height=&quot;80dp&quot; android:viewportHeight=&quot;24&quot; android:viewportWidth=&quot;24&quot; android:width=&quot;80dp&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_cancle.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher` appears to be unused">
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher.webp"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_like` appears to be unused">
+        <location
+            file="src/main/res/drawable/ic_like.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_profile` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_profile.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.navigation.main_nav_graph` appears to be unused"
+        errorLine1="&lt;navigation xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/navigation/main_nav_graph.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.slide_in` appears to be unused"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; >"
+        errorLine2="^">
+        <location
+            file="src/main/res/anim/slide_in.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.slide_out` appears to be unused"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; >"
+        errorLine2="^">
+        <location
+            file="src/main/res/anim/slide_out.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.splace` appears to be unused">
+        <location
+            file="src/main/res/drawable/splace.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.nav_close` appears to be unused"
+        errorLine1="    &lt;string name=&quot;nav_close&quot;>Close&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.zoomin` appears to be unused"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/anim/zoomin.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="RedundantNamespace"
+        message="This namespace declaration is redundant"
+        errorLine1="    &lt;scale xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/anim/zoomin.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="TooDeepLayout"
+        message="`activity_main.xml` has more than 10 levels, bad for performance"
+        errorLine1="                                    &lt;TextView"
+        errorLine2="                                     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="293"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/bn_home.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/bn_home.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/bn_orders.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/bn_orders.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/bn_shopping_cart.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/bn_shopping_cart.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/bn_user.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/bn_user.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_all.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_all.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_atta_rice.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_atta_rice.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_baby_care.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_baby_care.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_bakery_biscuits.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_bakery_biscuits.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_chicken_meat.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_chicken_meat.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_cleaning.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_cleaning.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_cold_and_juices.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_cold_and_juices.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_dairy_breakfast.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_dairy_breakfast.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_home_office.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_home_office.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_instant_frozen.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_instant_frozen.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_masala.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_masala.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_munchies.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_munchies.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_organic_premium.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_organic_premium.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_paan_corner.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_paan_corner.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_personal_care.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_personal_care.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_pet_care.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_pet_care.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_pharma_wellness.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_pharma_wellness.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_sauce_spreads.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_sauce_spreads.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_sweet_tooth.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_sweet_tooth.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_tea_coffee.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_tea_coffee.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/cat_vegetable.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/cat_vegetable.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ic_like.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/ic_like.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/ic_unlike.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/ic_unlike.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/logo.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/logo.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/profile_image.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/profile_image.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/splace.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/splace.png"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="The view name (`@+id/fragment_profile_details_phonenumber`) suggests this is a number, but it does not include a numeric `inputType` (such as &apos;`numberSigned`&apos;)"
+        errorLine1="            android:inputType=&quot;text&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="42"
+            column="13"/>
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="32"
+            column="13"
+            message="id defined here"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="14"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="31"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="48"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_search.xml"
+            line="35"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use the existing version catalog reference (`libs.androidx.room.compiler`) instead"
+        errorLine1="    kapt(&quot;androidx.room:room-compiler:2.6.1&quot;)"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="88"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="35"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="77"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="100"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="123"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="146"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="169"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                            &lt;ImageView"
+        errorLine2="                             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="209"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;com.google.android.material.floatingactionbutton.FloatingActionButton"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="411"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="197"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_category.xml"
+            line="47"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_order_details.xml"
+            line="40"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_order_details.xml"
+            line="57"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_order_details.xml"
+            line="74"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_order_details.xml"
+            line="91"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_product_details.xml"
+            line="35"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_product_details.xml"
+            line="57"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_product_details.xml"
+            line="79"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_splace_screen.xml"
+            line="10"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_cart_product.xml"
+            line="31"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_cart_product.xml"
+            line="72"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_cart_product.xml"
+            line="98"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_order_products.xml"
+            line="20"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_category.xml"
+            line="11"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_list.xml"
+            line="34"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_list.xml"
+            line="82"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_list_shimmer.xml"
+            line="26"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_list_shimmer.xml"
+            line="126"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemCartTextviewQuantity.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                               ~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterCart.kt"
+            line="48"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemCartTextviewQuantity.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterCart.kt"
+            line="48"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemCartTextviewQuantity.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterCart.kt"
+            line="48"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemCartTextviewQuantity.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterCart.kt"
+            line="48"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemCartTextviewQuantity.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterCart.kt"
+            line="48"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemCartTextviewQuantity.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                                                            ~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterCart.kt"
+            line="48"
+            column="77"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderHistoryPrice.text = &quot;₹${order.itemPrice.toString()}&quot;"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="44"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Ordered&quot;"
+        errorLine2="                                                     ~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="48"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Ordered&quot;"
+        errorLine2="                                                      ~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="48"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Received&quot;"
+        errorLine2="                                                     ~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="51"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Received&quot;"
+        errorLine2="                                                      ~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="51"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Dispatched&quot;"
+        errorLine2="                                                     ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="54"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Dispatched&quot;"
+        errorLine2="                                                      ~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="54"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Delivered&quot;"
+        errorLine2="                                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="57"
+            column="54"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                    rawItemOrderHistoryStatus.text = &quot;Delivered&quot;"
+        errorLine2="                                                      ~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderHistory.kt"
+            line="57"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewPrice.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                             ~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="46"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewPrice.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="46"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewPrice.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="46"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewPrice.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="46"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewPrice.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="46"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewPrice.text = &quot;₹&quot; + product.productPrice + &quot; /&quot; + product.productQuantity + product.productUnit"
+        errorLine2="                                                                          ~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="46"
+            column="75"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewQuantity.text = &quot;Quntity : &quot; + product.productCount.toString()"
+        errorLine2="                                                ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="47"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            rawItemOrderTextviewQuantity.text = &quot;Quntity : &quot; + product.productCount.toString()"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="47"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="            rawItemOrderTextviewQuantity.text = &quot;Quntity : &quot; + product.productCount.toString()"
+        errorLine2="                                                 ~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/adapter/AdapterOrderProduct.kt"
+            line="47"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            binding.orderPlaceTextviewSubtotal.text = &quot;₹&quot; + totlaPrice.toString()"
+        errorLine2="                                                      ~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/OrderPlaceActivity.kt"
+            line="189"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            binding.orderPlaceTextviewSubtotal.text = &quot;₹&quot; + totlaPrice.toString()"
+        errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/OrderPlaceActivity.kt"
+            line="189"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                binding.orderPlaceTextviewDeliverycharge.text = &quot;₹70&quot;"
+        errorLine2="                                                                ~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/OrderPlaceActivity.kt"
+            line="192"
+            column="65"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                binding.orderPlaceTextviewDeliverycharge.text = &quot;₹70&quot;"
+        errorLine2="                                                                 ~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/OrderPlaceActivity.kt"
+            line="192"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            binding.orderPlaceTextviewTotal.text = &quot;₹&quot; + totlaPrice.toString()"
+        errorLine2="                                                   ~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/OrderPlaceActivity.kt"
+            line="196"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            binding.orderPlaceTextviewTotal.text = &quot;₹&quot; + totlaPrice.toString()"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/buildbyhirenp/freshveggiemart/activity/OrderPlaceActivity.kt"
+            line="196"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hiren Prajapati&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Hiren Prajapati&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="53"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;+91 9999999999&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;+91 9999999999&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="61"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;My Account&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;My Account&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="87"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;My Cart&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;My Cart&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="110"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;My Favourite&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;My Favourite&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="133"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Oders&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Oders&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="156"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Setting&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Setting&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="179"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;LOGOUT&quot;, should use `@string` resource"
+        errorLine1="                            android:text=&quot;LOGOUT&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="222"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Admin&quot;, should use `@string` resource"
+        errorLine1="                                        android:text=&quot;Admin&quot;"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="298"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;API&quot;, should use `@string` resource"
+        errorLine1="                                        android:text=&quot;API&quot;"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="323"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;search&quot;, should use `@string` resource"
+        errorLine1="                                    android:hint=&quot;search&quot;"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="369"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Checkout&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Checkout&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="15"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Bill Detail :&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Bill Detail :&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="84"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Sub Total&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Sub Total&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="100"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Delivery Charge&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Delivery Charge&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="126"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Free&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Free&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="135"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Total&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Total&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="159"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;PhonePe&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;PhonePe&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="207"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Place Order&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Place Order&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="229"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Home&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/bottom_nav_menu.xml"
+            line="7"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Search&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Search&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/bottom_nav_menu.xml"
+            line="12"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Orders&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Orders&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/bottom_nav_menu.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Profile&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Profile&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/bottom_nav_menu.xml"
+            line="26"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Please, Enter Your Address&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;Please, Enter Your Address&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_address_layout.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Pincode&quot;, should use `@string` resource"
+        errorLine1="                        android:hint=&quot;Pincode&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_address_layout.xml"
+            line="71"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Phone No.&quot;, should use `@string` resource"
+        errorLine1="                        android:hint=&quot;Phone No.&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_address_layout.xml"
+            line="99"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;State&quot;, should use `@string` resource"
+        errorLine1="                        android:hint=&quot;State&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_address_layout.xml"
+            line="135"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;District&quot;, should use `@string` resource"
+        errorLine1="                        android:hint=&quot;District&quot;/>"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_address_layout.xml"
+            line="162"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Address(City, Sector etc..)&quot;, should use `@string` resource"
+        errorLine1="                    android:hint=&quot;Enter Address(City, Sector etc..)&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_address_layout.xml"
+            line="187"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;SAVE&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;SAVE&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/dialog_address_layout.xml"
+            line="206"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Cart&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Cart&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_cart.xml"
+            line="15"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Check Out&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Check Out&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_cart.xml"
+            line="168"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Products not Available&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Products not Available&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_category.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Category&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Category&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Phone Number&quot;, should use `@string` resource"
+        errorLine1="            android:hint=&quot;Phone Number&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_login.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VERIFY&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;VERIFY&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_login.xml"
+            line="61"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;We send OTP on This Number&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;We send OTP on This Number&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_o_t_p.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;SUBMIT&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;SUBMIT&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_o_t_p.xml"
+            line="65"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Order&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Order&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_order_details.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Orderd Items&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Orderd Items&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_order_details.xml"
+            line="124"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Don&apos;t Place any Order&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Don&apos;t Place any Order&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_orders.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Orders&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Orders&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_orders.xml"
+            line="29"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Title&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Title&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_product_details.xml"
+            line="120"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;₹ 0/kg&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;₹ 0/kg&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_product_details.xml"
+            line="129"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Name&quot;, should use `@string` resource"
+        errorLine1="            android:hint=&quot;Enter Name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Phone number&quot;, should use `@string` resource"
+        errorLine1="            android:hint=&quot;Phone number&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="41"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Enter Full Address&quot;, should use `@string` resource"
+        errorLine1="            android:hint=&quot;Enter Full Address&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="58"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Unlock&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;Unlock&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile_details.xml"
+            line="75"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Products Not Available&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Products Not Available&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_search.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Search Product&quot;, should use `@string` resource"
+        errorLine1="        android:title=&quot;Search Product&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_search.xml"
+            line="29"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Search&quot;, should use `@string` resource"
+        errorLine1="        android:hint=&quot;Search&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_search.xml"
+            line="42"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Splace Screen&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Splace Screen&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_splace_screen.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Loading....&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;Loading....&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/progress_dialog.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;TextView&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;TextView&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_cart_product.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;TextView&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;TextView&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_cart_product.xml"
+            line="57"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;1&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_cart_product.xml"
+            line="89"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;TextView&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;TextView&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_order_products.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;TextView&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;TextView&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_order_products.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;TextView&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;TextView&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_order_products.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;10-12-2001&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;10-12-2001&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_orderlist_history.xml"
+            line="41"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Delivered&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Delivered&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_orderlist_history.xml"
+            line="53"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Product Cat&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Product Cat&quot;  />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_orderlist_history.xml"
+            line="75"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;₹500&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;₹500&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_orderlist_history.xml"
+            line="86"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Title&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;Title&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_list.xml"
+            line="61"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;$30&quot;, should use `@string` resource"
+        errorLine1="        android:text=&quot;$30&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/raw_item_product_list.xml"
+            line="75"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:drawableRight` with `android:drawableEnd=&quot;@drawable/right_arrow&quot;` to better support right-to-left layouts"
+        errorLine1="                android:drawableRight=&quot;@drawable/right_arrow&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_order_place.xml"
+            line="225"
+            column="17"/>
+    </issue>
+
+</issues>

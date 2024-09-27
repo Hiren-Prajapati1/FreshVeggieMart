@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gray"
+    android:elevation="@dimen/_5sdp"
+    android:layout_margin="@dimen/_10sdp">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/raw_product_list_slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/edittext_custom_search"
+        android:backgroundTint="#D6D6D6"
+        app:iss_auto_cycle="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:iss_text_align="CENTER"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#e9e9e9"
+        app:cardCornerRadius="100dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_like" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/raw_item_product_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/background_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raw_product_list_slider_image" />
+
+    <TextView
+        android:id="@+id/raw_product_list_textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_27sdp"
+        android:text="Title"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raw_product_list_slider_image" />
+
+    <TextView
+        android:id="@+id/raw_product_list_textview_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="$30"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/raw_product_list_textview_title"
+        app:layout_constraintTop_toBottomOf="@+id/raw_product_list_textview_title" />
+
+    <ImageView
+        android:id="@+id/raw_product_list_imageview_add"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/plus_btn_background"
+        android:gravity="center"
+        android:src="@drawable/ic_plus"
+        android:padding="@dimen/_6sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/raw_item_product_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

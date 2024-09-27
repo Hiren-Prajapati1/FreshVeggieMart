@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fade_green"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentOrders">
+
+    <TextView
+        android:id="@+id/fragment_order_empty_product_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't Place any Order"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:textColor="@color/bg_color"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_order_toolbar" />
+
+    <Toolbar
+        android:id="@+id/fragment_order_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:title="Orders"
+        android:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_order_recycler_products"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_order_toolbar"
+        app:spanCount="1" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/fragment_order_shimmer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_order_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+            <include layout="@layout/shimmer_order_history_item"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textview_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_title_background"
+            android:padding="10dp"
+            android:text="Please, Enter Your Address"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/textview_dialog_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:baselineAligned="false"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    app:endIconCheckable="true"
+                    android:layout_weight="0.5"
+                    app:cursorColor="@color/bg_color"
+                    app:cursorErrorColor="@color/bg_color"
+                    app:hintTextColor="@color/bg_color"
+                    app:boxStrokeColor="@color/bg_color"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dialog_address_layout_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:hint="Pincode" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:endIconCheckable="true"
+                    android:layout_weight="0.5"
+                    app:cursorColor="@color/bg_color"
+                    app:hintTextColor="@color/bg_color"
+                    app:cursorErrorColor="@color/bg_color"
+                    app:boxStrokeColor="@color/bg_color"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dialog_address_layout_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:hint="Phone No." />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    app:endIconCheckable="true"
+                    android:layout_weight="0.5"
+                    app:cursorColor="@color/bg_color"
+                    app:cursorErrorColor="@color/bg_color"
+                    app:hintTextColor="@color/bg_color"
+                    app:boxStrokeColor="@color/bg_color"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dialog_address_layout_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:hint="State" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:endIconCheckable="true"
+                    android:layout_weight="0.5"
+                    app:cursorColor="@color/bg_color"
+                    app:cursorErrorColor="@color/bg_color"
+                    app:hintTextColor="@color/bg_color"
+                    app:boxStrokeColor="@color/bg_color"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dialog_address_layout_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:hint="District"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:endIconCheckable="true"
+                app:cursorColor="@color/bg_color"
+                app:cursorErrorColor="@color/bg_color"
+                app:hintTextColor="@color/bg_color"
+                app:boxStrokeColor="@color/bg_color"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                app:boxCornerRadiusTopStart="@dimen/_10sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dialog_address_layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Address(City, Sector etc..)"
+                    android:maxLines="3"
+                    android:minLines="1"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_address_layout_btn_save"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/dialog_button_success_background"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="@id/layoutDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutDialog"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

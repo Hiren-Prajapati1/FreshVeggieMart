@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/bn_home"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        />
+
+    <item
+        android:id="@+id/cart"
+        android:title=""/>
+
+    <item
+        android:id="@+id/order"
+        android:title="Orders"
+        android:icon="@drawable/bn_orders" />
+    <item
+        android:id="@+id/favourite"
+        android:title="Favourite"
+        android:icon="@drawable/ic_unlike" />
+
+</menu>

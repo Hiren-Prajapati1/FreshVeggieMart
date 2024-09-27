@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/splaceScreenFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.buildbyhirenp.freshveggiemart.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splaceScreenFragment"
+        android:name="com.buildbyhirenp.freshveggiemart.auth.SplaceScreenFragment"
+        android:label="fragment_splace_screen"
+        tools:layout="@layout/fragment_splace_screen" >
+        <action
+            android:id="@+id/action_splaceScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splaceScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.buildbyhirenp.freshveggiemart.auth.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_OTPFragment_to_profileDetailsFragment"
+            app:destination="@id/profileDetailsFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="com.buildbyhirenp.freshveggiemart.auth.ProfileDetailsFragment"
+        android:label="fragment_profile_details"
+        tools:layout="@layout/fragment_profile_details" />
+</navigation>

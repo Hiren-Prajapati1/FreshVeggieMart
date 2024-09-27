@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.buildbyhirenp.freshveggiemart.fragment.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentOrders"
+            app:destination="@id/fragmentOrders" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.buildbyhirenp.freshveggiemart.fragment.FragmentSearch"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_fragmentSearch_to_fragmentOrders"
+            app:destination="@id/fragmentOrders" />
+        <action
+            android:id="@+id/action_fragmentSearch_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+        <action
+            android:id="@+id/action_fragmentSearch_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOrders"
+        android:name="com.buildbyhirenp.freshveggiemart.fragment.FragmentOrders"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_fragmentOrders_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+        <action
+            android:id="@+id/action_fragmentOrders_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+        <action
+            android:id="@+id/action_fragmentOrders_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.buildbyhirenp.freshveggiemart.fragment.FragmentFavourite"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentOrders"
+            app:destination="@id/fragmentOrders" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+</navigation>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FreshVeggieMart</string>
+
+    <string name="razorpay_api_key">rzp_test_x8Dx8GS6O6Cg6K</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

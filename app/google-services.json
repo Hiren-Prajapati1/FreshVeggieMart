@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "826818463773",
+    "project_id": "freshveggiemart-87c31",
+    "storage_bucket": "freshveggiemart-87c31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826818463773:android:6f3016fb11a5b080d09ef4",
+        "android_client_info": {
+          "package_name": "com.buildbyhirenp.freshveggiemart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3VeRpzBMWQUt8q2TmsDbmRN3l2vOQ1JQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

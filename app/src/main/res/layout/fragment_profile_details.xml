@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".auth.ProfileDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fragment_profile_details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:padding="@dimen/_10sdp"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_profile_details_phonenumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/fragment_profile_details_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:padding="@dimen/_10sdp"
+            android:hint="Phone number"
+            android:inputType="text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_profile_details_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/fragment_profile_details_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:padding="@dimen/_10sdp"
+            android:hint="Enter Full Address"
+            android:inputType="text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:backgroundTint="@color/bg_color"
+            android:drawableEnd="@drawable/right_arrow"
+            android:drawablePadding="@dimen/_10sdp"
+            android:elevation="@dimen/_100sdp"
+            android:text="Unlock"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarProfileDetils"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:visibility="visible"
+            android:indeterminateTint="@color/bg_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

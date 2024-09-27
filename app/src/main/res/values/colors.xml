@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_color">#4CAF50</color>
+    <color name="fade_gray">#F3F3F3</color>
+    <color name="fade_green">#EFF8EF</color>
+
+    // Green Shades
+    <color name="freshgreen">#4CAF50</color>
+    <color name="limegreen">#8BC34A</color>
+    <color name="mintgreen">#A5D6A7</color>
+
+    //Bright Yellow: #FFEB3B (for accents, like buttons or highlights)
+    //Earth Brown: #795548 (for a grounded, organic feel)
+    //Sky Blue: #81D4FA (for a fresh, clean look)
+
+    <color name="yellow">#FFEB3B</color>
+    <color name="orange">#E46030</color>
+    <color name="blue">#50BAEA</color>
+</resources>

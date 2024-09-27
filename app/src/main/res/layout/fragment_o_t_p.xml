@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".auth.OTPFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="We send OTP on This Number"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_otp_textview_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/fragment_otp_editText_OTP"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:itemBackground="#EBF5F8"
+        app:cursorColor="@color/bg_color"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        app:itemHeight="@dimen/_38sdp"
+        app:itemRadius="10dp"
+        app:itemSpacing="@dimen/_8sdp"
+        app:itemWidth="@dimen/_38sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.chaos.view.PinView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragment_otp_button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:backgroundTint="@color/bg_color"
+        android:drawableEnd="@drawable/right_arrow"
+        android:drawablePadding="@dimen/_10sdp"
+        android:elevation="@dimen/_100sdp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_otp_editText_OTP" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_fragment_OTP"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_otp_editText_OTP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
