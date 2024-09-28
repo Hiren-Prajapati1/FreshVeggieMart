@@ -8,11 +8,14 @@
 
     <TextView
         android:id="@+id/fragment_favourite_empty_product_list"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Empty Favourite Product"
+        android:text="@string/EmptyFavourite"
         android:textSize="@dimen/_12sdp"
         android:textStyle="bold"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:gravity="center"
         android:textColor="@color/bg_color"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"

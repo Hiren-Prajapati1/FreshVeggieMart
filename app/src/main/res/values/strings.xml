@@ -5,4 +5,12 @@
 
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+
+    <string name="StatusOrdered">No orders have been placed yet. Start your shopping journey!</string>
+    <string name="StatusReceived">Awaiting confirmation. Place an order to get updates here.</string>
+    <string name="StatusDispatched">No items have been dispatched. Track your shipments here once your order is on the way.</string>
+    <string name="StatusDelivered">No deliveries made yet. Your completed orders will appear here.</string>
+
+    <string name="EmptyCart">Your cart is looking a little empty! Start adding some items to make it shine.</string>
+    <string name="EmptyFavourite">No favorites added yet. Simply tap the heart on items you love to keep them for later!</string>
 </resources>
