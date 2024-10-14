@@ -2,6 +2,7 @@ package com.buildbyhirenp.freshveggiemart.fragment
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.util.TypedValue
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +26,8 @@ class FragmentOrders : Fragment() {
 
     lateinit var binding: FragmentOrdersBinding
 
+    var lottieAnimation : Boolean? = false
+
     private var tabTitle = mutableMapOf(
         "OR" to R.drawable.status_ordered,
         "RE" to R.drawable.status_received,
@@ -34,15 +37,28 @@ class FragmentOrders : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        val bundle = arguments
+        lottieAnimation = bundle?.getBoolean("lottieAnimation", false)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentOrdersBinding.inflate(inflater, container, false)
 
         setTabLayout()
+        setLottieAnimation()
 
         return binding.root
+    }
+
+    private fun setLottieAnimation() {
+
+        if (lottieAnimation == true) {
+            binding.lottieAnimationView.visibility = View.VISIBLE
+            binding.lottieAnimationView.setAnimation(R.raw.success_animation)
+            binding.lottieAnimationView.playAnimation()
+        } else {
+            binding.lottieAnimationView.visibility = View.GONE
+        }
     }
 
     private fun setTabLayout() {

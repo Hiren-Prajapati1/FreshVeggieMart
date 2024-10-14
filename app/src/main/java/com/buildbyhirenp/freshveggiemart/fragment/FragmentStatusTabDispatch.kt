@@ -68,6 +68,12 @@ class FragmentStatusTabDispatch : Fragment() {
                     binding.fragmentStatusDispatchedRecyclerProducts.adapter = adapterOrderHistory
                     adapterOrderHistory.differ.submitList(orderedList)
 
+                    if (orderedList.isEmpty()){
+                        binding.fragmentStatusDispatchedEmptyProductList.visibility = View.VISIBLE
+                    }else{
+                        binding.fragmentStatusDispatchedEmptyProductList.visibility = View.GONE
+                    }
+
                     binding.fragmentStatusDispatchedShimmerLayout.visibility = View.GONE
                 }else{
                     binding.fragmentStatusDispatchedRecyclerProducts.visibility = View.GONE

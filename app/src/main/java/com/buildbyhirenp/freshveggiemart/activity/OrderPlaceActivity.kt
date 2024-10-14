@@ -70,7 +70,7 @@ class OrderPlaceActivity : AppCompatActivity(), PaymentResultWithDataListener {
         binding.orderPlaceButtonOrder.setOnClickListener {
 
             viewModel.getUserAddress { address ->
-                if (address == " "){
+                if (address == "Click  \"+\"  to add the address"){
                     val AddressLayout = DialogAddressLayoutBinding.inflate(LayoutInflater.from(this))
 
                     val alertDialog = AlertDialog.Builder(this)
@@ -141,7 +141,11 @@ class OrderPlaceActivity : AppCompatActivity(), PaymentResultWithDataListener {
             viewModel.deleteCartProducts()
         }
 
-        startActivity(Intent(this@OrderPlaceActivity, MainActivity::class.java))
+        val i = Intent(this, MainActivity::class.java)
+        i.putExtra("goOrder", true)
+        startActivity(i)
+        overridePendingTransition(com.buildbyhirenp.freshveggiemart.R.anim.fade_start, com.buildbyhirenp.freshveggiemart.R.anim.fade_exit)
+
     }
 
     override fun onPaymentError(p0: Int, p1: String?, p2: PaymentData?) {

@@ -19,6 +19,7 @@ import androidx.lifecycle.lifecycleScope
 import com.buildbyhirenp.freshveggiemart.R
 import com.buildbyhirenp.freshveggiemart.databinding.ActivityMainBinding
 import com.buildbyhirenp.freshveggiemart.databinding.DialogAddressLayoutBinding
+import com.buildbyhirenp.freshveggiemart.fragment.FragmentCategory
 import com.buildbyhirenp.freshveggiemart.fragment.FragmentHome
 import com.buildbyhirenp.freshveggiemart.fragment.FragmentOrders
 import com.buildbyhirenp.freshveggiemart.fragment.FragmentFavourite
@@ -48,6 +49,7 @@ class MainActivity : AppCompatActivity() {
         setAddress()
 
         val goSearch = intent.getBooleanExtra("goSearch", false)
+        val goOrder = intent.getBooleanExtra("goOrder", false)
 
         binding.mainActivityCardviewDrawer.setOnClickListener {
             if (binding.container.isDrawerOpen) {
@@ -62,7 +64,16 @@ class MainActivity : AppCompatActivity() {
             binding.bottomNavigationView.selectedItemId = R.id.search
             binding.mainActivityAppbarDrawer.visibility = View.GONE
             binding.bottomNavigationView.setBackground(null)
+        }else if (goOrder){
+            val fragment = FragmentOrders()
+            val bundle = Bundle()
+            bundle.putBoolean("lottieAnimation", true)
+            fragment.arguments = bundle
 
+            replaceFragment(fragment)
+            binding.bottomNavigationView.selectedItemId = R.id.order
+            binding.mainActivityAppbarDrawer.visibility = View.GONE
+            binding.bottomNavigationView.setBackground(null)
         }else{
             replaceFragment(FragmentHome())
             binding.bottomNavigationView.setBackground(null)
@@ -98,11 +109,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
             overridePendingTransition(R.anim.fade_start, R.anim.fade_exit)
         }
-//
-//        binding.drawerCart.setOnClickListener {
-//            val i = Intent(this, SecondActivity::class.java)
-//            startActivity(i)
-//        }
 
         binding.activityMainLogout.setOnClickListener {
             val builder = AlertDialog.Builder(this)

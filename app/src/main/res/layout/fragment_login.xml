@@ -3,8 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".auth.LoginFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_fragment_lottieAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/background"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="@dimen/_10sdp" />
 
     <com.hbb20.CountryCodePicker
         android:id="@+id/countryCodePicker"
@@ -17,6 +27,8 @@
         android:paddingBottom="@dimen/_7sdp"
         app:ccp_autoFormatNumber="true"
         app:ccp_showFlag="true"
+        app:ccpDialog_textColor="@color/white"
+        app:ccp_flagBorderColor="@color/white"
         app:ccp_showFullName="false"
         app:ccp_showNameCode="false"
         app:ccp_showPhoneCode="true"
@@ -36,6 +48,8 @@
         android:layout_marginBottom="@dimen/_25sdp"
         app:endIconCheckable="true"
         app:errorEnabled="true"
+        android:background="@drawable/border"
+        app:boxStrokeColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnVerifyNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/countryCodePicker">
@@ -45,6 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -74,4 +90,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

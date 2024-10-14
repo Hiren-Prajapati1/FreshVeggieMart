@@ -6,12 +6,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".auth.OTPFragment">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_fragment_lottieAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/background"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="@dimen/_10sdp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_400sdp"
         android:text="We send OTP on This Number"
+        android:textColor="@color/white"
         android:textSize="@dimen/_18sdp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -47,9 +58,10 @@
         app:itemWidth="@dimen/_38sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83">
 
     </com.chaos.view.PinView>
 

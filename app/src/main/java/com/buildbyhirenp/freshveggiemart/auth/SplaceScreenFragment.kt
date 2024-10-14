@@ -28,7 +28,7 @@ class SplaceScreenFragment : Fragment() {
             if(FirebaseUtils.isLoggedIn()){
                 startActivity(Intent(requireActivity() , MainActivity::class.java))
             }else{
-                findNavController().navigate(R.id.action_splaceScreenFragment_to_loginFragment)
+                findNavController().navigate(R.id.action_splaceScreenFragment_to_startFragment)
             }
 
         }, 3000)

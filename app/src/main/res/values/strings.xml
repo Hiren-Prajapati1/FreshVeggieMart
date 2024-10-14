@@ -13,4 +13,6 @@
 
     <string name="EmptyCart">Your cart is looking a little empty! Start adding some items to make it shine.</string>
     <string name="EmptyFavourite">No favorites added yet. Simply tap the heart on items you love to keep them for later!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
