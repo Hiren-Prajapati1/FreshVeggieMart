@@ -41,10 +41,15 @@ class LoginFragment : Fragment() {
         super.onCreate(savedInstanceState)
         val mActivity = activity
         mUtility = Utility(mActivity!!)
+
+
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
+
+        binding.loginFragmentLottieAnimation.setAnimation(R.raw.background)
+//        binding.loginFragmentLottieAnimation.playAnimation()
 
         binding.countryCodePicker.registerCarrierNumberEditText(binding.editTextNumber)
 

@@ -2,90 +2,82 @@ package com.buildbyhirenp.freshveggiemart.fragment
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.util.TypedValue
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.buildbyhirenp.freshveggiemart.R
 import com.buildbyhirenp.freshveggiemart.activity.SecondActivity
 import com.buildbyhirenp.freshveggiemart.adapter.AdapterOrderHistory
+import com.buildbyhirenp.freshveggiemart.adapter.AdapterOrderStatusPager
 import com.buildbyhirenp.freshveggiemart.databinding.FragmentOrdersBinding
 import com.buildbyhirenp.freshveggiemart.models.OrdersItem
 import com.buildbyhirenp.freshveggiemart.viewmodels.UserViewModel
+import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.launch
+import kotlin.math.roundToInt
 
 class FragmentOrders : Fragment() {
 
     lateinit var binding: FragmentOrdersBinding
-    private val viewModel: UserViewModel by viewModels()
-    lateinit var adapterOrderHistory: AdapterOrderHistory
+
+    var lottieAnimation : Boolean? = false
+
+    private var tabTitle = mutableMapOf(
+        "OR" to R.drawable.status_ordered,
+        "RE" to R.drawable.status_received,
+        "DIS" to R.drawable.status_dispatched,
+        "DE" to R.drawable.status_delivered
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        val bundle = arguments
+        lottieAnimation = bundle?.getBoolean("lottieAnimation", false)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentOrdersBinding.inflate(inflater, container, false)
 
-        getAllOrders()
+        setTabLayout()
+        setLottieAnimation()
 
         return binding.root
     }
 
-    private fun getAllOrders() {
-        binding.fragmentOrderShimmerLayout.visibility = View.VISIBLE
-        lifecycleScope.launch {
-            viewModel.getAllOrders().collect{orderList ->
+    private fun setLottieAnimation() {
 
-                if (orderList.isNotEmpty()){
-                    binding.fragmentOrderRecyclerProducts.visibility = View.VISIBLE
-                    binding.fragmentOrderEmptyProductList.visibility = View.GONE
-
-                    val orderedList = ArrayList<OrdersItem>()
-                    for (order in orderList){
-
-                        val title = StringBuilder()
-                        var totlaPrice = 0
-
-                        for (products in order.orderList!!){
-                            val price = products.productPrice.toString().toInt()
-                            val Itemcount = products.productCount
-                            totlaPrice += (price.times(Itemcount!!))
-
-                            title.append("${products.productCategory}, ")
-                        }
-
-                        val orededItems = OrdersItem(order.orderId, order.orderDate, order.orderStatus, title.toString(), totlaPrice)
-                        orderedList.add(orededItems)
-                    }
-
-                    adapterOrderHistory = AdapterOrderHistory(requireContext(), ::onOrderedItemClick)
-                    binding.fragmentOrderRecyclerProducts.adapter = adapterOrderHistory
-                    adapterOrderHistory.differ.submitList(orderedList)
-
-                    binding.fragmentOrderShimmerLayout.visibility = View.GONE
-                }else{
-                    binding.fragmentOrderRecyclerProducts.visibility = View.GONE
-                    binding.fragmentOrderEmptyProductList.visibility = View.VISIBLE
-
-                    binding.fragmentOrderShimmerLayout.visibility = View.GONE
-                }
-            }
+        if (lottieAnimation == true) {
+            binding.lottieAnimationView.visibility = View.VISIBLE
+            binding.lottieAnimationView.setAnimation(R.raw.success_animation)
+            binding.lottieAnimationView.playAnimation()
+        } else {
+            binding.lottieAnimationView.visibility = View.GONE
         }
     }
 
-    private fun onOrderedItemClick(oders : OrdersItem){
-        val i = Intent(requireActivity(), SecondActivity::class.java)
-        i.putExtra("status", oders.itemStatus)
-        i.putExtra("orderId", oders.orderId)
-        i.putExtra("orderPrice", oders.itemPrice)
-        i.putExtra("goOrderDetails", true)
-        startActivity(i)
-        requireActivity().overridePendingTransition(R.anim.fade_start, R.anim.fade_exit)
-    }
+    private fun setTabLayout() {
+        val titles = ArrayList(tabTitle.keys)
+        binding.fragmentOrderViewpager.adapter = AdapterOrderStatusPager(this)
+        TabLayoutMediator(binding.fragmentOrderTablayout, binding.fragmentOrderViewpager){tab, position ->
+            tab.text = titles[position]
+        }.attach()
 
+        tabTitle.values.forEachIndexed { index, imageResid ->
+            val textview = LayoutInflater.from(requireContext()).inflate(R.layout.tab_titles, null) as TextView
+
+            textview.setCompoundDrawablesWithIntrinsicBounds(0, 0, imageResid,0)
+            textview.compoundDrawablePadding = TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, 4f, resources.displayMetrics
+            ).roundToInt()
+
+            binding.fragmentOrderTablayout.getTabAt(index)?.customView = textview
+        }
+    }
 
 }

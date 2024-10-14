@@ -9,13 +9,16 @@
 
     <TextView
         android:id="@+id/fragment_cart_empty_product_list"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Don't add any products in Cart"
+        android:text="@string/EmptyCart"
         android:textColor="@color/bg_color"
         android:textSize="@dimen/_12sdp"
         android:textStyle="bold"
         android:visibility="gone"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

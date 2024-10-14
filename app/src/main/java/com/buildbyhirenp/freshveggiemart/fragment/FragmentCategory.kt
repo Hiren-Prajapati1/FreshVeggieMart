@@ -39,7 +39,12 @@ class FragmentCategory : Fragment() {
 
         binding.fragmentCategoryToolbar.title = category
 
-        fetchCategoryProduct()
+        if (category == "All"){
+            getAllProducts()
+        }else{
+            fetchCategoryProduct()
+        }
+
         onSearchIconClick()
         onNavigationIconClick()
 
@@ -66,6 +71,28 @@ class FragmentCategory : Fragment() {
         binding.fragmentCategoryShimmerLayout.visibility = View.VISIBLE
         lifecycleScope.launch {
             viewModel.getCategoryProduct(category!!).collect{
+
+                if (it.isEmpty()){
+                    binding.fragmentCategoryRecyclerProducts.visibility = View.GONE
+                    binding.fragmentCategoryEmptyProductList.visibility = View.VISIBLE
+                }else{
+                    binding.fragmentCategoryRecyclerProducts.visibility = View.VISIBLE
+                    binding.fragmentCategoryEmptyProductList.visibility = View.GONE
+                }
+
+                adapterProduct = AdapterProduct(::onAddButtonClick, ::onProductDetailClick)
+                binding.fragmentCategoryRecyclerProducts.adapter = adapterProduct
+                adapterProduct.differ.submitList(it)
+
+                binding.fragmentCategoryShimmerLayout.visibility = View.GONE
+            }
+        }
+    }
+
+    private fun getAllProducts() {
+        binding.fragmentCategoryShimmerLayout.visibility = View.VISIBLE
+        lifecycleScope.launch {
+            viewModel.fetchAllProduct().collect{
 
                 if (it.isEmpty()){
                     binding.fragmentCategoryRecyclerProducts.visibility = View.GONE

@@ -88,13 +88,11 @@ dependencies {
     implementation(libs.glide)
     annotationProcessor (libs.compiler)
 
-//    implementation(libs.intentsdk.v243)  // PhonePe
-//    implementation(libs.appinvokesdk)  // paytm
     implementation(libs.checkout)  // razorpay
-
 
     implementation(libs.duo.navigation.drawer)   //  for drawer ui
     implementation(libs.materialdialog)  // for bottom sheet dialog
     implementation(libs.imageslideshow) // for slider
     implementation(libs.shimmer)  // for shimmer on ui
+    implementation(libs.lottie)  // for lottie animation
 }
