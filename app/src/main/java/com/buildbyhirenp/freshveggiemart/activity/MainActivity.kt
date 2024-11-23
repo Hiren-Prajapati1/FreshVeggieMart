@@ -29,6 +29,7 @@ import com.buildbyhirenp.freshveggiemart.utility.FirebaseUtils
 import com.buildbyhirenp.freshveggiemart.utility.Utility
 import com.buildbyhirenp.freshveggiemart.viewmodels.UserViewModel
 import com.google.android.material.navigation.NavigationBarView
+import com.google.type.Color
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -134,10 +135,14 @@ class MainActivity : AppCompatActivity() {
         binding.mainActivityCardviewAdmin.setOnClickListener {
             binding.mainActivityCardviewAdmin.backgroundTintList = ContextCompat.getColorStateList(this, R.color.mintgreen)
             binding.mainActivityCardviewApi.backgroundTintList = ContextCompat.getColorStateList(this, R.color.fade_gray)
+            binding.textViewApiPan.setTextColor(ContextCompat.getColor(this, R.color.black))
+            binding.textViewAdminPan.setTextColor(ContextCompat.getColor(this, R.color.white))
         }
         binding.mainActivityCardviewApi.setOnClickListener {
             binding.mainActivityCardviewAdmin.backgroundTintList = ContextCompat.getColorStateList(this, R.color.fade_gray)
             binding.mainActivityCardviewApi.backgroundTintList = ContextCompat.getColorStateList(this, R.color.mintgreen)
+            binding.textViewApiPan.setTextColor(ContextCompat.getColor(this, R.color.white))
+            binding.textViewAdminPan.setTextColor(ContextCompat.getColor(this, R.color.black))
         }
     }
 

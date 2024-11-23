@@ -337,13 +337,13 @@
                                     app:layout_constraintTop_toTopOf="parent">
 
                                     <TextView
-                                        android:id="@+id/textView2"
+                                        android:id="@+id/textView_admin_pan"
                                         android:layout_width="@dimen/_130sdp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
                                         android:text="Admin"
                                         android:padding="@dimen/_10sdp"
-                                        android:textColor="@color/black"
+                                        android:textColor="@color/white"
                                         android:textSize="@dimen/_15sdp"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent" />
@@ -362,7 +362,7 @@
                                     app:layout_constraintTop_toTopOf="parent">
 
                                     <TextView
-                                        android:id="@+id/textView3"
+                                        android:id="@+id/textView_api_pan"
                                         android:layout_width="@dimen/_130sdp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"

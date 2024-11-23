@@ -3,20 +3,20 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="bg_color">#4CAF50</color>
+<!--    <color name="bg_color">#4CAF50</color>-->
+    <color name="bg_color">#C8A2C8</color>  // lovander
     <color name="fade_gray">#F3F3F3</color>
-    <color name="fade_green">#EFF8EF</color>
+<!--    <color name="fade_green">#EFF8EF</color>-->
+    <color name="fade_green">#70F5F5FA</color> // fade lovander
 
     // Green Shades
     <color name="freshgreen">#4CAF50</color>
     <color name="limegreen">#8BC34A</color>
-    <color name="mintgreen">#A5D6A7</color>
+    <color name="mintgreen">#956EA8</color>   // previous color [mint-green] -> #A5D6A7
 
-    //Bright Yellow: #FFEB3B (for accents, like buttons or highlights)
-    //Earth Brown: #795548 (for a grounded, organic feel)
-    //Sky Blue: #81D4FA (for a fresh, clean look)
 
     <color name="yellow">#FFEB3B</color>
     <color name="orange">#E46030</color>
     <color name="blue">#50BAEA</color>
+    <color name="green">#4CAF50</color>
 </resources>

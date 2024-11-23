@@ -88,7 +88,8 @@ dependencies {
     implementation(libs.glide)
     annotationProcessor (libs.compiler)
 
-    implementation(libs.checkout)  // razorpay
+//    implementation(libs.checkout)  // razorpay
+    implementation("com.razorpay:checkout:1.6.20")
 
     implementation(libs.duo.navigation.drawer)   //  for drawer ui
     implementation(libs.materialdialog)  // for bottom sheet dialog

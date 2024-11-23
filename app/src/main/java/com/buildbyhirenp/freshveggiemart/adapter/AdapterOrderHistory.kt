@@ -55,7 +55,7 @@ class AdapterOrderHistory(val context: Context, val onOrderedItemClick: (OrdersI
                     rawItemOrderHistoryStatus.backgroundTintList = ContextCompat.getColorStateList(context, R.color.blue)
                 }3 -> {
                     rawItemOrderHistoryStatus.text = "Delivered"
-                    rawItemOrderHistoryStatus.backgroundTintList = ContextCompat.getColorStateList(context, R.color.bg_color)
+                    rawItemOrderHistoryStatus.backgroundTintList = ContextCompat.getColorStateList(context, R.color.green)
                 }
             }
         }
