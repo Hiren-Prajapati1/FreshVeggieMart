@@ -24,12 +24,12 @@ import com.buildbyhirenp.freshveggiemart.utility.constants.apiEndPoint
 import com.buildbyhirenp.freshveggiemart.utility.constants.merchantTransactionId
 import com.buildbyhirenp.freshveggiemart.viewmodels.UserViewModel
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import org.json.JSONObject
 import com.razorpay.Checkout
 import com.razorpay.PaymentData
 import com.razorpay.PaymentResultWithDataListener
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import org.json.JSONObject
 
 
 class OrderPlaceActivity : AppCompatActivity(), PaymentResultWithDataListener {
@@ -111,7 +111,7 @@ class OrderPlaceActivity : AppCompatActivity(), PaymentResultWithDataListener {
             options.put("description","Ecommerce")
             //You can omit the image option to fetch the image from the dashboard
             options.put("image","http://example.com/image/rzp.jpg")
-            options.put("theme.color", "#4CAF50");
+            options.put("theme.color", "#C8A2C8");
             options.put("currency","INR");
 //            options.put("order_id", "order_DBJOWzybf0sJbb");
             options.put("amount",price.toString())//pass amount in currency subunits
